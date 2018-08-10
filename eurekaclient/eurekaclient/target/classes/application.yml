@@ -9,3 +9,8 @@ server:
 spring:
   application:
     name: eureka_hello
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:8888/

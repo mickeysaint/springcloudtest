@@ -19,10 +19,13 @@ public class EurekaClientApplication {
 
 	@Value("${server.port}")
 	String port;
+	
+	@Value("${hello}")
+	String hello;
 
 	@RequestMapping("/")
      public String home() {
-         return "hello world from port " + port;
+         return "hello world from port " + port + hello;
      }
 
 }
